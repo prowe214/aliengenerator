@@ -1,6 +1,7 @@
 var routes = require('routes'),
-      db = require('monk')('localhost/space'),
-
-      fs = require('fs')
+      db = require('monk')('localhost/aliens'),
+      aliens = db.get('aliens'),
+      fs = require('fs'),
       qs = require('qs'),
-      db = require('monk')('localhost/space');
+      mime = require('mime'),
+      view = require('./view')

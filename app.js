@@ -11,7 +11,6 @@ var server = http.createServer(function (req, res) {
     res.setHeader('Set-Cookie', ["type=alien", "language=javascript"])
     res.end(template)
   })
-
 })
 
 server.listen(8080);

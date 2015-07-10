@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --harmony app.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,7 @@
   },
   "homepage": "https://github.com/remory08/aliengenerator",
   "dependencies": {
-<<<<<<< HEAD
     "gm": "^1.18.1",
-=======
->>>>>>> upstream/master
     "mime": "^1.3.4",
     "monk": "^1.0.1",
     "mustache": "^2.1.2",
