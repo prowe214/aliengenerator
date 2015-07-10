@@ -1,5 +1,7 @@
 var routes = require('routes'),
-      fs = require('fs')
+      db = require('monk')('localhost/aliens'),
+      aliens = db.get('aliens'),
+      fs = require('fs'),
       qs = require('qs'),
       db = require('monk')('localhost/space'),
       aliens = db.get('aliens'),
