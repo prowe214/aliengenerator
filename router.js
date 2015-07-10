@@ -1,4 +1,4 @@
-var routes = require('routes'),
+var routes = require('routes')(),
       db = require('monk')('localhost/aliens'),
       aliens = db.get('aliens'),
       fs = require('fs'),
@@ -9,13 +9,15 @@ var routes = require('routes'),
       mime = require('mime');
 
 routes.addRoute('/', function (req, res, url) {
-  console.log(req.url);
   res.setHeader('Content-Type', 'text/html');
   if (req.method === 'GET') {
-    var template = view.render('/index', {})
+    var template = view.render('index', {})
     res.end(template)
   }
 })
+
+
+
 
 // routes.addRoute('/login', function (req, res, url))
 
