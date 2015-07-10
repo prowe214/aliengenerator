@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/remory08/aliengenerator",
   "dependencies": {
+<<<<<<< HEAD
     "gm": "^1.18.1",
+=======
+>>>>>>> upstream/master
     "mime": "^1.3.4",
     "monk": "^1.0.1",
     "mustache": "^2.1.2",
